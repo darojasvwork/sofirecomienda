@@ -1,5 +1,6 @@
 import "../components/styles.css";
 import React, { Component } from "react";
+import navbarlogo from "../components/assets/img/navbar-logo.svg";
 
 class Nav extends Component {
   render() {
@@ -10,7 +11,7 @@ class Nav extends Component {
       >
         <div className="container">
           <a className="navbar-brand js-scroll-trigger" href="#page-top">
-            <img src="assets/img/navbar-logo.svg" alt="" />
+            <img src={navbarlogo} alt="" />
           </a>
           <button
             className="navbar-toggler navbar-toggler-right"
