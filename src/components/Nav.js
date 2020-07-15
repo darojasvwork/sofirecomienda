@@ -3,12 +3,50 @@ import React, { Component } from "react";
 import navbarlogo from "../components/assets/img/navbar-logo.svg";
 
 class Nav extends Component {
+  constructor(props) {
+    super(props);
+
+    this.listener = null;
+    this.state = {
+      estilo: "navbar navbar-expand-lg navbar-dark fixed-top",
+    };
+  }
+
+  scroll() {
+    this.listener = document.addEventListener("scroll", (e) => {
+      var scrolled = document.scrollingElement.scrollTop;
+      if (scrolled >= 150) {
+        if (
+          this.state.estilo !==
+          "navbar navbar-expand-lg navbar-dark fixed-top navbar-shrink"
+        ) {
+          this.setState({
+            estilo:
+              "navbar navbar-expand-lg navbar-dark fixed-top navbar-shrink",
+          });
+        }
+      } else {
+        if (
+          this.state.estilo !== "navbar navbar-expand-lg navbar-dark fixed-top"
+        ) {
+          this.setState({
+            estilo: "navbar navbar-expand-lg navbar-dark fixed-top",
+          });
+        }
+      }
+    });
+  }
+
+  componentDidMount() {
+    this.scroll();
+  }
+
+  componentDidUpdate() {
+    document.removeEventListener("scroll", this.listener);
+  }
   render() {
     return (
-      <nav
-        className="navbar navbar-expand-lg navbar-dark fixed-top"
-        id="mainNav"
-      >
+      <nav className={this.state.estilo} id="mainNav">
         <div className="container">
           <a className="navbar-brand js-scroll-trigger" href="#page-top">
             <img src={navbarlogo} alt="" />
