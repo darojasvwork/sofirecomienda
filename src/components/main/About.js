@@ -1,6 +1,6 @@
-import "../components/styles.css";
+import "../assets/styles.css";
 import React, { Component } from "react";
-import Nombre from "./assets/img/Nombre.svg";
+import Nombre from "../assets/img/Nombre.svg";
 
 class About extends Component {
   render() {

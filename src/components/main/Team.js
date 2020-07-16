@@ -1,6 +1,6 @@
-import "../components/styles.css";
+import "../assets/styles.css";
 import React, { Component } from "react";
-import FotoSofi from "./assets/img/team/Sofi.jpg";
+import FotoSofi from "../assets/img/team/Sofi.jpg";
 
 class Team extends Component {
   render() {

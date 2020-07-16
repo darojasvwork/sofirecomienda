@@ -1,6 +1,6 @@
-import "../components/styles.css";
+import "../assets/styles.css";
 import React, { Component } from "react";
-import navbarlogo from "../components/assets/img/navbar-logo.svg";
+import navbarlogo from "../assets/img/navbar-logo.svg";
 
 class Nav extends Component {
   constructor(props) {
@@ -8,7 +8,7 @@ class Nav extends Component {
 
     this.listener = null;
     this.state = {
-      estilo: "navbar navbar-expand-lg navbar-dark fixed-top",
+      estilo: "navbar navbar-expand-lg navbar-dark fixed-top navbar-shrink",
     };
   }
 
@@ -27,10 +27,12 @@ class Nav extends Component {
         }
       } else {
         if (
-          this.state.estilo !== "navbar navbar-expand-lg navbar-dark fixed-top"
+          this.state.estilo !==
+          "navbar navbar-expand-lg navbar-dark fixed-top navbar-shrink"
         ) {
           this.setState({
-            estilo: "navbar navbar-expand-lg navbar-dark fixed-top",
+            estilo:
+              "navbar navbar-expand-lg navbar-dark fixed-top navbar-shrink",
           });
         }
       }

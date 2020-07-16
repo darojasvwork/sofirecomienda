@@ -1,4 +1,4 @@
-import "../components/styles.css";
+import "../assets/styles.css";
 import React, { Component } from "react";
 
 class Header extends Component {
