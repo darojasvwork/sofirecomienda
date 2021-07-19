@@ -5,7 +5,7 @@ import Header from "./Header";
 import Services from "./Services";
 import ListReviews from "./ListReviews";
 import About from "./About";
-import Team from "./Team";
+import Contactame from "./Contactame";
 import Contact from "./Contact";
 
 class Main extends Component {
@@ -16,8 +16,7 @@ class Main extends Component {
         <Services />
         <ListReviews />
         <About />
-        <Team />
-        <Contact />
+        <Contactame />        
       </div>
     );
   }

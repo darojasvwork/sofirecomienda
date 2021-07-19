@@ -6,11 +6,11 @@ class Header extends Component {
     return (
       <header className="masthead transbox">
         <div className="container">
-          <div className="masthead-subheading">
-            Bienvenido a Sofi Recomienda!
+          <div className="masthead-heading">
+            ¡Bienvenido a Sofi Recomienda!
           </div>
-          <div className="masthead-heading text-uppercase">
-            Es un gusto conocerte
+          <div className="masthead-subheading">
+            Descubramos juntos ¿Qué comer? ¿Dondé ir? y ¿Qué nuevo experimentar?
           </div>
           <a
             className="btn btn-primary btn-xl text-uppercase js-scroll-trigger"

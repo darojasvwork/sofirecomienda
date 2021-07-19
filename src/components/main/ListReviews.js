@@ -12,7 +12,7 @@ class ListReviews extends Component {
   renderList() {
     return this.props.reviews.map((review) => {
       return (
-        <div className="col-lg-4 col-sm-6 mb-4" key={review.id}>
+        <div className="col-lg-12 col-sm-6 mb-4" key={review.id}>
           <div className="portfolio-item">
             <Link
               to={`/reviews/Review/${review.id}`}

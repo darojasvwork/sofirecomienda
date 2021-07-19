@@ -68,28 +68,23 @@ class Nav extends Component {
           <div className="collapse navbar-collapse" id="navbarResponsive">
             <ul className="navbar-nav text-uppercase ml-auto">
               <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#services">
-                  Proyecto
-                </a>
-              </li>
-              <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#portfolio">
-                  Visitas
-                </a>
-              </li>
-              <li className="nav-item">
                 <a className="nav-link js-scroll-trigger" href="#about">
                   ¿Quién soy?
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#team">
-                  Redes sociales
+                <a className="nav-link js-scroll-trigger" href="#services">
+                  Servicios
+                </a>
+              </li>
+              <li className="nav-item">
+                <a className="nav-link js-scroll-trigger" href="#portfolio">
+                Lugares visitados
                 </a>
               </li>
               <li className="nav-item">
                 <a className="nav-link js-scroll-trigger" href="#contact">
-                  Contacto
+                  Contactame
                 </a>
               </li>
             </ul>

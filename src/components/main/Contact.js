@@ -9,7 +9,7 @@ class Contact extends Component {
           <div className="text-center">
             <h2 className="section-heading text-uppercase">Contáctame</h2>
             <h3 className="section-subheading text-muted">
-              Lorem ipsum dolor sit amet consectetur.
+              Puedes contactarme a través de los siguientes canales.
             </h3>
           </div>
           <form id="contactForm" name="sentMessage" noValidate="V">
