@@ -12,10 +12,10 @@ class About extends Component {
             <h3 className="section-subheading text-muted">
               Mi nombre es Sofia Solano, pero mis amigas y amigos me
               llaman
-              <div>
+            </h3>
+            <div>
                 <img className="nombre" alt="Sofi" src={Nombre} />
               </div>
-            </h3>
           </div>          
         </div>
       </section>

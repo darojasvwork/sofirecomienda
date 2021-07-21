@@ -50,7 +50,7 @@ class Nav extends Component {
     return (
       <nav className={this.state.estilo} id="mainNav">
         <div className="container">
-          <a className="navbar-brand js-scroll-trigger" href="#page-top">
+          <a className="navbar-brand js-scroll-trigger" href="/#page-top">
             <img src={navbarlogo} alt="" />
           </a>
           <button
@@ -68,22 +68,22 @@ class Nav extends Component {
           <div className="collapse navbar-collapse" id="navbarResponsive">
             <ul className="navbar-nav text-uppercase ml-auto">
               <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#about">
+                <a className="nav-link js-scroll-trigger" href="/#about">
                   ¿Quién soy?
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#services">
+                <a className="nav-link js-scroll-trigger" href="/#services">
                   Servicios
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#portfolio">
+                <a className="nav-link js-scroll-trigger" href="/#portfolio">
                 Lugares visitados
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="#contact">
+                <a className="nav-link js-scroll-trigger" href="/#contact">
                   Contactame
                 </a>
               </li>

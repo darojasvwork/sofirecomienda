@@ -7,6 +7,7 @@ import Nav from "./general/Nav";
 import Footer from "./general/Footer";
 import Main from "./main/Main";
 import Review from "./reviews/Review";
+import Lugar from "./lugares/Lugar";
 import history from "./history";
 
 const App = () => {
@@ -18,6 +19,7 @@ const App = () => {
           <Switch>
             <Route path="/" exact component={Main} />
             <Route path="/reviews/Review/:id" exact component={Review} />
+            <Route path="/lugares/lugar/:id" exact component={Lugar} />
           </Switch>
           <Footer />
         </div>

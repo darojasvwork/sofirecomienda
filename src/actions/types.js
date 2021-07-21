@@ -5,3 +5,5 @@ export const FETCH_REVIEWS = "FETCH_REVIEWS";
 export const DELETE_REVIEW = "DELETE_REVIEW";
 export const FETCH_REVIEW = "FETCH_REVIEW";
 export const EDIT_REVIEW = "EDIT_REVIEWS";
+export const FETCH_LUGARES = "FETCH_LUGARES";
+export const FETCH_LUGAR = "FETCH_LUGAR";
