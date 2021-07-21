@@ -1,27 +1,28 @@
 {
   "files": {
-    "main.css": "/static/css/main.6f7178e0.chunk.css",
-    "main.js": "/static/js/main.5eb62525.chunk.js",
-    "main.js.map": "/static/js/main.5eb62525.chunk.js.map",
+    "main.css": "/static/css/main.d73c8de7.chunk.css",
+    "main.js": "/static/js/main.9046093c.chunk.js",
+    "main.js.map": "/static/js/main.9046093c.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d4fdf6b6.js",
     "runtime-main.js.map": "/static/js/runtime-main.d4fdf6b6.js.map",
-    "static/js/2.ad26a8ad.chunk.js": "/static/js/2.ad26a8ad.chunk.js",
-    "static/js/2.ad26a8ad.chunk.js.map": "/static/js/2.ad26a8ad.chunk.js.map",
+    "static/js/2.f7762f46.chunk.js": "/static/js/2.f7762f46.chunk.js",
+    "static/js/2.f7762f46.chunk.js.map": "/static/js/2.f7762f46.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.a973e5eddf450711f8d8bc13999f0b58.js": "/precache-manifest.a973e5eddf450711f8d8bc13999f0b58.js",
+    "precache-manifest.f096f572164b23225ea617fec57117e8.js": "/precache-manifest.f096f572164b23225ea617fec57117e8.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.6f7178e0.chunk.css.map": "/static/css/main.6f7178e0.chunk.css.map",
-    "static/js/2.ad26a8ad.chunk.js.LICENSE.txt": "/static/js/2.ad26a8ad.chunk.js.LICENSE.txt",
-    "static/media/Nombre.svg": "/static/media/Nombre.77f1ea0e.svg",
-    "static/media/Rosa.svg": "/static/media/Rosa.97916396.svg",
+    "static/css/main.d73c8de7.chunk.css.map": "/static/css/main.d73c8de7.chunk.css.map",
+    "static/js/2.f7762f46.chunk.js.LICENSE.txt": "/static/js/2.f7762f46.chunk.js.LICENSE.txt",
+    "static/media/Nombre.svg": "/static/media/Nombre.0a135ce0.svg",
+    "static/media/RosaActiva.svg": "/static/media/RosaActiva.d79db177.svg",
+    "static/media/RosaInactiva.svg": "/static/media/RosaInactiva.c11aa268.svg",
     "static/media/Sofi.jpg": "/static/media/Sofi.68204c8e.jpg",
     "static/media/styles.css": "/static/media/header-bg.07d20c54.jpg",
-    "static/media/navbar-logo.svg": "/static/media/navbar-logo.512227f5.svg"
+    "static/media/navbar-logo.svg": "/static/media/navbar-logo.8e6899d4.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.d4fdf6b6.js",
-    "static/js/2.ad26a8ad.chunk.js",
-    "static/css/main.6f7178e0.chunk.css",
-    "static/js/main.5eb62525.chunk.js"
+    "static/js/2.f7762f46.chunk.js",
+    "static/css/main.d73c8de7.chunk.css",
+    "static/js/main.9046093c.chunk.js"
   ]
 }
