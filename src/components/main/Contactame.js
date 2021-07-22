@@ -1,6 +1,6 @@
 import "../assets/styles.css";
 import React, { Component } from "react";
-import FotoSofi from "../assets/img/team/Sofi.jpg";
+import FotoSofi from "../assets/img/team/Sofi.webp";
 
 class Contactame extends Component {
   render() {
