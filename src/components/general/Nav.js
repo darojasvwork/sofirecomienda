@@ -1,6 +1,8 @@
 import "../assets/styles.css";
 import React, { Component } from "react";
 import navbarlogo from "../assets/img/navbar-logo.svg";
+import { HashLink } from 'react-router-hash-link';
+
 
 class Nav extends Component {
   constructor(props) {
@@ -78,7 +80,7 @@ class Nav extends Component {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="/#portfolio">
+                <a className="nav-link js-scroll-trigger" href="/#/#portfolio">
                 Lugares visitados
                 </a>
               </li>
@@ -87,6 +89,8 @@ class Nav extends Component {
                   Contactame
                 </a>
               </li>
+              <HashLink to="#contactame">Link to Hash Fragment</HashLink>
+
             </ul>
           </div>
         </div>
