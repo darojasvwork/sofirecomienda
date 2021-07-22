@@ -1,12 +1,8 @@
 import "../components/assets/styles.css";
 
 import React from "react";
-<<<<<<< HEAD
 import { HashRouter as Router, Route, Switch } from "react-router-dom";
-=======
-import { Route, Switch } from "react-router-dom";
-import {HashRouter as Router} from "react-router-dom";
->>>>>>> 7baa841bfe5fcae3061c6e7bfff2582e9891f0e2
+
 
 import Nav from "./general/Nav";
 import Footer from "./general/Footer";
