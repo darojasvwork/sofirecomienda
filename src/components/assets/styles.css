@@ -10966,6 +10966,13 @@ section#contact form#contactForm :-ms-input-placeholder {
   height: auto;
 }
 
+.firma {
+  width: 100px;
+  height: auto;
+  float:right;
+  padding-top: 2em;
+}
+
 .redes {
   color: #a1812b;
 }
@@ -10984,11 +10991,92 @@ section#contact form#contactForm :-ms-input-placeholder {
   opacity:0.3;
 }
 
-.rosa{
-  width: 25px;  
+.rosa{    
   padding-right: 1%;
 }
 
+.rosa.x1{
+  width: 25px;   
+}
+
+.rosa.x2{
+  width: 35px;    
+}
+.rosa.x3{
+  width: 150px;    
+}
 .fecha{
 font-size: 80%;
+}
+.experiencia {
+min-height: auto;
+}
+.listaExperiencia
+{
+text-align: left;  
+}
+.cardExperiencia
+{  
+width: 18% !important;  
+}
+
+.cardCalificacion
+{  
+width: 100% !important;  
+}
+
+.cardHeaderExperiencia
+{  
+max-height: 50px;  
+background-color: #900C3F !important;
+}
+.textoCalificacion
+{
+  font-weight: bolder !important;
+  font-size: 1em !important;
+  padding-right: 10px !important;
+  color: #000 !important;
+}
+.ui.basic.label {
+  background: none #fff;
+  border: 0px !important; 
+  color: rgba(0,0,0,.87);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+
+@media only screen and (max-width: 1000px) {
+  .cardExperiencia
+  {
+  width: 100% !important;  
+  }
+  .cardCalificacion
+  {
+  width: 100% !important;  
+  }
+  .experiencia {
+    min-height: 0em;
+    }
+}
+.ui.card>.content>.header:not(.ui), .ui.cards>.card>.content>.header:not(.ui) {
+color: #fff;
+}
+
+.recomendacion{
+  color: #000 !important;
+}
+
+.textoTipo{
+  font-size: 0.8em;
+  color: #000;
+}
+
+.textoLugar{
+  font-size: 0.8em;
+  color: rgba(0,0,0,.4);
+}
+
+.textoNombre{
+  color: #000 !important;
 }

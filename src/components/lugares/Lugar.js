@@ -20,47 +20,44 @@ class Lugar extends Component {
   }
 
   renderReviews() {
-    const reviews = this.props.lugar.reviews;
-    console.log(reviews);
+    const reviewsEncabezado = this.props.lugar.reviewsEncabezado;
+
     return (
-      <div class="ui centered grid link cards">
-        {reviews.map((item, index) => {
-          
-          
-          console.log(item.publicado===1);
-          if(item.publicado===1)
-          {
-            return this.renderPublicado(item);
-          }else{
-            return this.renderNoPublicado(item);
+      <div className="ui centered grid link cards">
+        {reviewsEncabezado.map((item, index) => {
+          if (item.publicado === 1) {
+            return this.renderPublicado(item, index);
+          } else {
+            return this.renderNoPublicado(item, index);
           }
         })}
       </div>
     );
   }
 
-  renderPublicado(props){
-    console.log(props);
+  renderPublicado(props, index) {
     return (
-      <div class="card">
-        <div class="ui fluid image">
-          <div class="ui red ribbon label">
-            <i class="heart icon"></i> Nuevo
+      <div key={index} className="card">
+        <Link to={`/ReviewsDetalle/${props.id}`}>
+        <div className="ui fluid image">
+          <div className="ui red ribbon label">
+            <i className="heart icon"></i> Nuevo
           </div>
-          <img class="" src="/assets/img/image.jpg" />
-        </div>
-        <div class="content">
-          <div class="header">
+          <img className="" src={props.thumbnail} />
+        </div>        
+        <div className="content">        
+          <div className="header textoNombre">
             <h2>{props.title}</h2>
           </div>
-          <div class="meta">
-            <a>{props.negocio}</a>
+          <div className="meta">
+            <a className="textoTipo">{props.negocio}</a>
           </div>
-          <div class="description">{props.lugar}</div>
+          <div className="description textoLugar">{props.lugar}</div>        
         </div>
-        <div class="extra content">
-          <span class="right floated fecha">{props.date_publish}</span>
-          <span class="left floated">       
+        </Link>
+        <div className="extra content">
+          <span className="right floated fecha">{props.date_publish}</span>
+          <span className="left floated">
             {this.mostrarCalificacion(props.CalificacionGeneral)}
           </span>
         </div>
@@ -68,39 +65,37 @@ class Lugar extends Component {
     );
   }
 
-  mostrarCalificacion(props){       
+  mostrarCalificacion(props) {
     var puntos = [];
-    var calificacion=Math.round(props);
-    console.log(calificacion);
-      for (var i = 0; i < calificacion; i++) {
-        puntos.push(<img className="rosa" src={RosaActiva}/>);
-      } 
-      var inactivos=(5-calificacion)
-      for (var i = 0; i < inactivos; i++) {
-        puntos.push(<img className="rosa" src={RosaInactiva}/>);
-      } 
-      return puntos;
+    var calificacion = Math.round(props);
+    for (var i = 0; i < calificacion; i++) {
+      puntos.push(<img key={i} className="rosa x1" src={RosaActiva} />);
+    }
+    for (var i = calificacion; i < 5; i++) {
+      puntos.push(<img key={i} className="rosa x1" src={RosaInactiva} />);
+    }
+    return puntos;
   }
 
-  renderNoPublicado(props){
+  renderNoPublicado(props, index) {
     return (
-      <div class="card">
-        <div class="ui fluid image">
-          <img class="disabled" src="/assets/img/image.jpg" />
+      <div key={index} className="card">
+        <div className="ui fluid image">
+          <img className="disabled" src={props.thumbnail} />
         </div>
-        <div class="content">
-          <div class="header">
+        <div className="content">
+          <div className="header textoNombre">
             <h2>{props.title}</h2>
           </div>
-          <div class="meta">
+          <div className="meta">
             <a>{props.negocio}</a>
           </div>
-          <div class="description">{props.lugar}</div>
+          <div className="description">{props.lugar}</div>
         </div>
-        <div class="extra content">
-          <span class="right floated fecha">{props.date_publish}</span>
-          <span class="left floated">           
-            {this.mostrarCalificacion(props.CalificacionGeneral)}            
+        <div className="extra content">
+          <span className="right floated fecha">{props.date_publish}</span>
+          <span className="left floated">
+            {this.mostrarCalificacion(props.CalificacionGeneral)}
           </span>
         </div>
       </div>
@@ -110,7 +105,7 @@ class Lugar extends Component {
   renderLugar() {
     if (!this.props.lugar) {
       return (
-        <section className="page-section bg-light" id="portfolio">
+        <section className="page-section bg-light" id="Lugares">
           <div className="container">
             <Loader message="Loading.." />
           </div>
@@ -120,20 +115,20 @@ class Lugar extends Component {
       const { title, banner, subtitle, descripcion } = this.props.lugar;
 
       return (
-        <section className="page-section" id="portfolio">
+        <section className="page-section" id="Lugares">
           <div className="container">
             <div className="text-center">
               <h2 className="section-heading text-uppercase">{title}</h2>
-              <div class="ui divider"></div>
+              <div className="ui divider"></div>
               {/* Preview Image */}
-              <div class="ui fluid image">
+              <div className="ui fluid image">
                 <img src={banner} alt="Restaurantes" />
               </div>
-              
+
               {/* Post Content */}
 
-              <h4 class="ui horizontal divider header">
-                <i class="tag icon"></i>
+              <h4 className="ui horizontal divider header">
+                <i className="tag icon"></i>
                 {subtitle}
               </h4>
               <div className="text-left review">

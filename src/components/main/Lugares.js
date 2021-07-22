@@ -15,7 +15,7 @@ class ListLugares extends Component {
         <div className="col-lg-12 col-sm-6 mb-4" key={lugar.id}>
           <div className="portfolio-item">
             <Link
-              to={`/lugares/lugar/${lugar.id}`}
+              to={`/lugares/lugar/${lugar.id}/#Lugares`}
               className="portfolio-link"
             >
               <div className="portfolio-hover">

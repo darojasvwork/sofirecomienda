@@ -2,10 +2,10 @@ import "../assets/styles.css";
 import React, { Component } from "react";
 import FotoSofi from "../assets/img/team/Sofi.jpg";
 
-class Team extends Component {
+class Contactame extends Component {
   render() {
     return (
-      <section className="page-section bg-light" id="team">
+      <section className="page-section bg-light" id="contactame">
         <div className="container">
           <div className="text-center">
             <h2 className="section-heading text-uppercase">Contactame</h2>
@@ -21,10 +21,10 @@ class Team extends Component {
                   <h4>Sofia Solano Aguilar</h4>
                   <br />                 
                 </div>
-                <div class="card-group">
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">
+                <div className="card-group">
+                  <div className="card">
+                    <div className="card-body">
+                      <h5 className="card-title">
                         <a
                           className="btn btn-dark btn-social mx-2"
                           href="https://www.instagram.com/sofi.recomienda/"
@@ -32,7 +32,7 @@ class Team extends Component {
                           <i className="fab fa-instagram"></i>
                         </a>
                       </h5>
-                      <p class="card-text">
+                      <p className="card-text">
                         {" "}
                         <a
                           className="redes"
@@ -43,18 +43,18 @@ class Team extends Component {
                       </p>
                     </div>
                   </div>
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">
+                  <div className="card">
+                    <div className="card-body">
+                      <h5 className="card-title">
                         {" "}
                         <a
                           className="btn btn-dark btn-social  mx-4"
                           href="https://www.facebook.com/sofirecomienda/"
                         >
-                          <i class="fab fa-facebook-f"></i>
+                          <i className="fab fa-facebook-f"></i>
                         </a>
                       </h5>
-                      <p class="card-text">
+                      <p className="card-text">
                         <a
                           className="redes"
                           href="https://www.facebook.com/sofirecomienda/"
@@ -64,18 +64,18 @@ class Team extends Component {
                       </p>
                     </div>
                   </div>
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">
+                  <div className="card">
+                    <div className="card-body">
+                      <h5 className="card-title">
                         {" "}
                         <a
                           className="btn btn-dark btn-social mx-4"
                           href="https://api.whatsapp.com/send?phone=50687573623&text=Hola%2C%20me%20interesa%20conocer%20m%C3%A1s%20acerca%20de%20los%20servicios%20que%20brinda%20Sofi%20Recomienda"
                         >
-                          <i class="fab fa-whatsapp"></i>
+                          <i className="fab fa-whatsapp"></i>
                         </a>
                       </h5>
-                      <p class="card-text">
+                      <p className="card-text">
                         {" "}
                         <a
                           className="redes"
@@ -86,9 +86,9 @@ class Team extends Component {
                       </p>
                     </div>
                   </div>
-                  <div class="card">
-                    <div class="card-body">
-                      <h5 class="card-title">
+                  <div className="card">
+                    <div className="card-body">
+                      <h5 className="card-title">
                       <a
                     className="btn btn-dark btn-social mx-4"
                     href="mailto:info@sofirecomienda.com"
@@ -96,7 +96,7 @@ class Team extends Component {
                     <i className="fa fa-envelope"></i>
                   </a>
                       </h5>
-                      <p class="card-text">
+                      <p className="card-text">
                   <a className="redes" href="mailto:info@sofirecomienda.com">
                     info@sofirecomienda.com
                   </a>
@@ -112,4 +112,4 @@ class Team extends Component {
     );
   }
 }
-export default Team;
+export default Contactame;

@@ -7,12 +7,12 @@ export const selectReview = (review) => {
 };
 
 export const fetchReviews = () => async (dispatch) => {
-  const response = await datos.get("/reviews");
+  const response = await datos.get("/ReviewsDetalle");
   dispatch({ type: "FETCH_REVIEWS", payload: response.data });
 };
 
 export const fetchReview = (id) => async (dispatch) => {
-  const response = await datos.get(`/reviews/${id}`);
+  const response = await datos.get(`/ReviewsDetalle/${id}`);
   dispatch({ type: "FETCH_REVIEW", payload: response.data });
 };
 
@@ -29,6 +29,6 @@ export const fetchLugares = () => async (dispatch) => {
 };
 
 export const fetchLugar = (id) => async (dispatch) => {
-  const response = await datos.get(`/luigares/${id}`);
+  const response = await datos.get(`/lugares/${id}`);
   dispatch({ type: "FETCH_LUGAR", payload: response.data });
 };

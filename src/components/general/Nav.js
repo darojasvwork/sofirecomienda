@@ -83,7 +83,7 @@ class Nav extends Component {
                 </a>
               </li>
               <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="/#contact">
+                <a className="nav-link js-scroll-trigger" href="/#contactame">
                   Contactame
                 </a>
               </li>
