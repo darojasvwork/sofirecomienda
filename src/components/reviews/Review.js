@@ -18,8 +18,6 @@ class Review extends Component {
   componentDidMount() {
     const { id } = this.props.match.params;
     this.props.fetchReview(id);
-    console.log("Review");
-    console.log(this.state);
   }
 
   renderExperiencia() {

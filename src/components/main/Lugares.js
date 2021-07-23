@@ -37,8 +37,7 @@ class ListLugares extends Component {
     });
   }
 
-  render() {
-    console.log(this.state);
+  render() {    
     return (
       <section className="page-section bg-light" id="portfolio">
         <div className="container">
