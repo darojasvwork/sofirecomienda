@@ -3,6 +3,7 @@ import { connect } from "react-redux";
 import { Link } from "react-router-dom";
 import "../assets/styles.css";
 import { selectLugar, fetchLugares } from "../../actions";
+import { NavHashLink as NavLink } from 'react-router-hash-link';
 
 class ListLugares extends Component {
   componentDidMount() {
@@ -14,8 +15,8 @@ class ListLugares extends Component {
       return (
         <div className="col-lg-12 col-sm-6 mb-4" key={lugar.id}>
           <div className="portfolio-item">
-            <Link
-              to={`/lugares/lugar/${lugar.id}`}
+            <NavLink
+              to={`/lugares/lugar/${lugar.id}/#`}
               className="portfolio-link"
             >
               <div className="portfolio-hover">
@@ -24,7 +25,7 @@ class ListLugares extends Component {
                 </div>
               </div>
               <img className="img-fluid" src={lugar.thumbnail} alt="" />
-            </Link>
+            </NavLink>
             <div className="portfolio-caption">
               <div className="portfolio-caption-heading">{lugar.title}</div>
               {/*<div className="portfolio-caption-subheading text-muted">

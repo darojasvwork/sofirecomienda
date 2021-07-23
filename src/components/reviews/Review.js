@@ -337,7 +337,7 @@ class Review extends Component {
     } else {
       const review = this.props.review;
       const maxDate = Moment([review.date_publish], "DD-MM-YYYY").format("LL");
-      document.documentElement.style.setProperty('--imageBackground',"url("+review.image+")");
+      document.documentElement.style.setProperty('--imageBackground',`url(${review.image})`);
 
       return (
         <section className="page-section" id="portfolio">

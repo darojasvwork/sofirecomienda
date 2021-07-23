@@ -3,7 +3,9 @@ import { connect } from "react-redux";
 import Moment from "moment";
 import "moment-timezone";
 import "moment/locale/es";
-import { Link } from "react-router-dom";
+
+import { NavHashLink as NavLink } from 'react-router-hash-link';
+
 import RosaActiva from "../assets/img/Iconos/RosaActiva.svg";
 import RosaInactiva from "../assets/img/Iconos/RosaInactiva.svg";
 
@@ -38,7 +40,7 @@ class Lugar extends Component {
   renderPublicado(props, index) {
     return (
       <div key={index} className="ui cardLugar card">
-        <Link to={`/ReviewsDetalle/${props.id}`}>
+        <NavLink to={`/ReviewsDetalle/${props.id}`}>
         <div className="ui fluid image">
           <div className="ui red ribbon label">
             <i className="heart icon"></i> Nuevo
@@ -54,7 +56,7 @@ class Lugar extends Component {
           </div>
           <div className="description textoLugar">{props.lugar}</div>        
         </div>
-        </Link>
+        </NavLink>
         <div className="extra content">
           <span className="right floated fecha">{props.date_publish}</span>
           <span className="left floated">
@@ -113,7 +115,7 @@ class Lugar extends Component {
       );
     } else {
       const { title, banner, subtitle, descripcion } = this.props.lugar;
-      document.documentElement.style.setProperty('--imageBackground',"url("+banner+")");
+      document.documentElement.style.setProperty('--imageBackground',`url(${banner})`);
       return (
         <section className="page-section" id="Lugares">
           <div className="container">
