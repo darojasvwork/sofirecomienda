@@ -327,7 +327,7 @@ class Review extends Component {
     );
   }
 
-  renderReview() {
+  renderReview() {    
     if (!this.props.review) {
       return (
         <section className="page-section bg-light" id="portfolio">
@@ -339,6 +339,7 @@ class Review extends Component {
     } else {
       const review = this.props.review;
       const maxDate = Moment([review.date_publish], "DD-MM-YYYY").format("LL");
+      document.documentElement.style.setProperty('--imageBackground',"url("+review.image+")");
 
       return (
         <section className="page-section" id="portfolio">
@@ -351,11 +352,10 @@ class Review extends Component {
             <hr />
 
             {/* Preview Image */}
-            <div className="ui fluid image">
+            <div className="ui fluid image imagenBanner responsive">
               <div className="ui red ribbon label">
                 <i className={review.icon}></i> {review.TipoNegocio}
-              </div>
-              <img src={review.image} alt="Emprendimiento" />
+              </div>              
             </div>
             <hr />
             {/* Post Content */}

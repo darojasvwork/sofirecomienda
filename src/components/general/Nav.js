@@ -2,6 +2,7 @@ import "../assets/styles.css";
 import React, { Component } from "react";
 import navbarlogo from "../assets/img/navbar-logo.svg";
 import { HashLink } from 'react-router-hash-link';
+import { NavHashLink as NavLink } from 'react-router-hash-link';
 
 
 class Nav extends Component {
@@ -48,13 +49,11 @@ class Nav extends Component {
   componentDidUpdate() {
     document.removeEventListener("scroll", this.listener);
   }
-  render() {
+  render() {    
     return (
       <nav className={this.state.estilo} id="mainNav">
         <div className="container">
-          <a className="navbar-brand js-scroll-trigger" href="/#page-top">
-            <img src={navbarlogo} alt="" />
-          </a>
+          <HashLink className="navbar-brand js-scroll-trigger" smooth to="/#page-top"><img src={navbarlogo} alt="" /></HashLink>       
           <button
             className="navbar-toggler navbar-toggler-right"
             type="button"
@@ -70,28 +69,18 @@ class Nav extends Component {
           <div className="collapse navbar-collapse" id="navbarResponsive">
             <ul className="navbar-nav text-uppercase ml-auto">
               <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="/#about">
-                  ¿Quién soy?
-                </a>
+                <HashLink className="nav-link js-scroll-trigger" smooth to="/#about">¿Quién soy?</HashLink>       
               </li>
               <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="/#services">
-                  Servicios
-                </a>
+                <HashLink className="nav-link js-scroll-trigger" smooth to="/#services">Servicios</HashLink>       
               </li>
               <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="/#/#portfolio">
-                Lugares visitados
-                </a>
+                <HashLink className="nav-link js-scroll-trigger" smooth to="/#portfolio">Lugares visitados</HashLink>       
               </li>
               <li className="nav-item">
-                <a className="nav-link js-scroll-trigger" href="/#contactame">
-                  Contactame
-                </a>
-              </li>
-              <HashLink to="#contactame">Link to Hash Fragment</HashLink>
-
-            </ul>
+              <HashLink className="nav-link js-scroll-trigger" smooth to="/#contactame">Contactame</HashLink>                                                  
+              </li>              
+            </ul>            
           </div>
         </div>
       </nav>

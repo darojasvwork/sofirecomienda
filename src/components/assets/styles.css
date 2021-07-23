@@ -42,6 +42,7 @@
     "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --font-family-monospace: SFMono-Regular, Menlo, Monaco, Consolas,
     "Liberation Mono", "Courier New", monospace;
+  --imageBackground: "";
 }
 
 *,
@@ -10969,7 +10970,7 @@ section#contact form#contactForm :-ms-input-placeholder {
 .firma {
   width: 100px;
   height: auto;
-  float:right;
+  float: right;
   padding-top: 2em;
 }
 
@@ -10985,53 +10986,48 @@ section#contact form#contactForm :-ms-input-placeholder {
 }
 
 .card {
-  background-color: transparent; 
+  background-color: transparent;
 }
 .disabled {
-  opacity:0.3;
+  opacity: 0.3;
 }
 
-.rosa{    
+.rosa {
   padding-right: 1%;
 }
 
-.rosa.x1{
-  width: 25px;   
+.rosa.x1 {
+  width: 25px;
 }
 
-.rosa.x2{
-  width: 35px;    
+.rosa.x2 {
+  width: 35px;
 }
-.rosa.x3{
-  width: 150px;    
+.rosa.x3 {
+  width: 150px;
 }
-.fecha{
-font-size: 80%;
+.fecha {
+  font-size: 80%;
 }
 .experiencia {
-min-height: auto;
+  min-height: auto;
 }
-.listaExperiencia
-{
-text-align: left;  
+.listaExperiencia {
+  text-align: left;
 }
-.cardExperiencia
-{  
-width: 18% !important;  
+.cardExperiencia {
+  width: 18% !important;
 }
 
-.cardCalificacion
-{  
-width: 100% !important;  
+.cardCalificacion {
+  width: 100% !important;
 }
 
-.cardHeaderExperiencia
-{  
-max-height: 50px;  
-background-color: #900C3F !important;
+.cardHeaderExperiencia {
+  max-height: 50px;
+  background-color: #900c3f !important;
 }
-.textoCalificacion
-{
+.textoCalificacion {
   font-weight: bolder !important;
   font-size: 1em !important;
   padding-right: 10px !important;
@@ -11039,44 +11035,57 @@ background-color: #900C3F !important;
 }
 .ui.basic.label {
   background: none #fff;
-  border: 0px !important; 
-  color: rgba(0,0,0,.87);
+  border: 0px !important;
+  color: rgba(0, 0, 0, 0.87);
   -webkit-box-shadow: none;
   box-shadow: none;
 }
 
-
 @media only screen and (max-width: 1000px) {
-  .cardExperiencia
-  {
-  width: 100% !important;  
+  .cardExperiencia {
+    width: 100% !important;
   }
-  .cardCalificacion
-  {
-  width: 100% !important;  
+  .cardCalificacion {
+    width: 100% !important;
   }
   .experiencia {
     min-height: 0em;
-    }
+  }
+  .cardLugar {
+    width: 100% !important;
+  }
 }
-.ui.card>.content>.header:not(.ui), .ui.cards>.card>.content>.header:not(.ui) {
-color: #fff;
+.ui.card > .content > .header:not(.ui),
+.ui.cards > .card > .content > .header:not(.ui) {
+  color: #fff;
 }
 
-.recomendacion{
+.recomendacion {
   color: #000 !important;
 }
 
-.textoTipo{
+.textoTipo {
   font-size: 0.8em;
   color: #000;
 }
 
-.textoLugar{
+.textoLugar {
   font-size: 0.8em;
-  color: rgba(0,0,0,.4);
+  color: rgba(0, 0, 0, 0.4);
 }
 
-.textoNombre{
+.textoNombre {
   color: #000 !important;
+}
+
+.imagenBanner {
+  padding-top: 10.5rem;
+  padding-bottom: 6rem;
+  text-align: center;
+  color: #000;
+  background-image: var(--imageBackground) !important;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center top;
+  background-size: cover;
 }

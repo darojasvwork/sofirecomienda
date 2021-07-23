@@ -37,7 +37,7 @@ class Lugar extends Component {
 
   renderPublicado(props, index) {
     return (
-      <div key={index} className="card">
+      <div key={index} className="ui fliud cardLugar card">
         <Link to={`/ReviewsDetalle/${props.id}`}>
         <div className="ui fluid image">
           <div className="ui red ribbon label">
@@ -79,7 +79,7 @@ class Lugar extends Component {
 
   renderNoPublicado(props, index) {
     return (
-      <div key={index} className="card">
+      <div key={index} className="ui fluid cardLugar card">
         <div className="ui fluid image">
           <img className="disabled" src={props.thumbnail} />
         </div>
@@ -113,7 +113,7 @@ class Lugar extends Component {
       );
     } else {
       const { title, banner, subtitle, descripcion } = this.props.lugar;
-
+      document.documentElement.style.setProperty('--imageBackground',"url("+banner+")");
       return (
         <section className="page-section" id="Lugares">
           <div className="container">
@@ -121,8 +121,7 @@ class Lugar extends Component {
               <h2 className="section-heading text-uppercase">{title}</h2>
               <div className="ui divider"></div>
               {/* Preview Image */}
-              <div className="ui fluid image">
-                <img src={banner} alt="Restaurantes" />
+              <div className="ui fluid imagenBanner image">                
               </div>
 
               {/* Post Content */}
