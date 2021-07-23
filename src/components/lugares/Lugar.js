@@ -37,7 +37,7 @@ class Lugar extends Component {
 
   renderPublicado(props, index) {
     return (
-      <div key={index} className="ui fliud cardLugar card">
+      <div key={index} className="ui cardLugar card">
         <Link to={`/ReviewsDetalle/${props.id}`}>
         <div className="ui fluid image">
           <div className="ui red ribbon label">
@@ -79,7 +79,7 @@ class Lugar extends Component {
 
   renderNoPublicado(props, index) {
     return (
-      <div key={index} className="ui fluid cardLugar card">
+      <div key={index} className="ui cardLugar card">
         <div className="ui fluid image">
           <img className="disabled" src={props.thumbnail} />
         </div>
