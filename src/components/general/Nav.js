@@ -2,7 +2,6 @@ import "../assets/styles.css";
 import React, { Component } from "react";
 import navbarlogo from "../assets/img/navbar-logo.svg";
 import { HashLink } from 'react-router-hash-link';
-import { NavHashLink as NavLink } from 'react-router-hash-link';
 
 
 class Nav extends Component {
@@ -53,7 +52,7 @@ class Nav extends Component {
     return (
       <nav className={this.state.estilo} id="mainNav">
         <div className="container">
-          <HashLink className="navbar-brand js-scroll-trigger" smooth to="/#page-top"><img src={navbarlogo} alt="" /></HashLink>       
+          <HashLink className="navbar-brand js-scroll-trigger" smooth to="/#page-top"><img src={navbarlogo} alt="" /></HashLink>
           <button
             className="navbar-toggler navbar-toggler-right"
             type="button"
