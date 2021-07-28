@@ -5,8 +5,9 @@ import "moment-timezone";
 import "moment/locale/es";
 import RosaActiva from "../assets/img/Iconos/RosaActiva.svg";
 import RosaInactiva from "../assets/img/Iconos/RosaInactiva.svg";
+import RosaMitad from "../assets/img/Iconos/RosaMitad.svg";
 import Nombre from "../assets/img/Nombre.svg";
-import CalificacionFinalImagen from "../assets/img/Reviews/1/Calificacion.svg";
+
 
 import "../assets/styles.css";
 
@@ -20,144 +21,331 @@ class Review extends Component {
     this.props.fetchReview(id);
   }
 
+  renderUbicacion() {
+    const reviewsDetalle = this.props.review;
+
+    return (
+      <div className="ui list listaExperiencia">
+        {reviewsDetalle.Ubicacion.map((item, index) => {
+          return (
+            <div key={index} className="item">
+              <i className="map marker icon"></i>
+              <div className="content">
+                <div className="description">{item}</div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    );
+  }
+
+  renderTipo() {
+    const reviewsDetalle = this.props.review;
+
+    return (
+      <div  className="ui list listaExperiencia">
+        {reviewsDetalle.Tipo.map((item, index) => {
+          return (
+            <div key={index} className="item">
+              <i className="map marker icon"></i>
+              <div className="content">
+                <div className="description">{item}</div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    );
+  }
+
+  renderHorario() {
+    const reviewsDetalle = this.props.review;
+
+    return (
+      <div  className="ui list listaExperiencia">
+        {reviewsDetalle.Horario.map((item, index) => {
+          return (
+            <div key={index} className="item">
+              <i className="map marker icon"></i>
+              <div className="content">
+                <div className="description">{item}</div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    );
+  }
+
+  renderAmbiente() {
+    const reviewsDetalle = this.props.review;
+
+    return (
+      <div  className="ui list listaExperiencia">
+        {reviewsDetalle.Ambiente.map((item, index) => {
+          return (
+            <div key={index} className="item">
+              <i className="map marker icon"></i>
+              <div className="content">
+                <div className="description">{item}</div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    );
+  }
+
+  renderPrecios() {
+    const reviewsDetalle = this.props.review;
+
+    return (
+      <div  className="ui list listaExperiencia">
+        {reviewsDetalle.Precios.map((item, index) => {
+          return (
+            <div key={index} className="item">
+              <i className="map marker icon"></i>
+              <div className="content">
+                <div className="description">{item}</div>
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    );
+  }
+
   renderExperiencia() {
     return (
-      <div class="ui centered grid cards ">
-        <div class="cardExperiencia fluid card">
-          <div class="content cardHeaderExperiencia">
-            <div class="header fuente">Ubicación</div>
+      <div  className="ui centered grid cards ">
+        <div className="cardExperiencia fluid card">
+          <div className="content cardHeaderExperiencia">
+            <div className="header fuente">Ubicación</div>
           </div>
-          <div class="content experiencia">
-            <div class="content">
-              <div class="ui list listaExperiencia">
-                <div class="item">
-                  <i class="map marker icon"></i>
-                  <div class="content">
-                    <div class="description">
-                      250 metros al este del Automercado, en La Unión Tres Ríos.
-                    </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <i class="map marker icon"></i>
-                  <div class="content">
-                    <div class="description">Waze: Muelle 21 Marisquería.</div>
-                  </div>
-                </div>
+          <div className="content experiencia">
+            <div className="content">{this.renderUbicacion()}</div>
+          </div>
+        </div>
+
+        <div className="cardExperiencia fluid card">
+          <div className="content cardHeaderExperiencia">
+            <div className="header">Tipo de comida</div>
+          </div>
+          <div className="content experiencia">
+            <div className="description">
+              <div className="ui list listaExperiencia">
+                <div className="content">{this.renderTipo()}</div>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="cardExperiencia fluid card">
-          <div class="content cardHeaderExperiencia">
-            <div class="header">Tipo de comida</div>
+        <div className="cardExperiencia fluid card">
+          <div className="content cardHeaderExperiencia">
+            <div className="header">Horario</div>
           </div>
-          <div class="content experiencia">
-            <div class="description">
-              <div class="ui list listaExperiencia">
-                <div class="item">
-                  <i class="map marker icon"></i>
-                  <div class="content">
-                    <div class="description">Mariscos (su especialidad)</div>
-                  </div>
-                </div>
-                <div class="item">
-                  <i class="map marker icon"></i>
-                  <div class="content">
-                    <div class="description">Carnes</div>
-                  </div>
-                </div>
-                <div class="item">
-                  <i class="map marker icon"></i>
-                  <div class="content">
-                    <div class="description">Pastas</div>
-                  </div>
-                </div>
-                <div class="item">
-                  <i class="map marker icon"></i>
-                  <div class="content">
-                    <div class="description">Ensaladas</div>
-                  </div>
-                </div>
-              </div>
+          <div className="content experiencia">
+            <div className="ui list listaExperiencia">
+              <div className="content">{this.renderHorario()}</div>
             </div>
           </div>
         </div>
 
-        <div class="cardExperiencia fluid card">
-          <div class="content cardHeaderExperiencia">
-            <div class="header">Horario</div>
+        <div className="cardExperiencia fluid card">
+          <div className="content cardHeaderExperiencia">
+            <div className="header">Ambiente</div>
           </div>
-          <div class="content experiencia">
-            <div class="ui list listaExperiencia">
-              <div class="item">
-                <i class="map marker icon"></i>
-                <div class="content">
-                  <div class="description">
-                    Lunes a sábado de 11:30 am a 8:30 pm
-                  </div>
-                </div>
-              </div>
-              <div class="item">
-                <i class="map marker icon"></i>
-                <div class="content">
-                  <div class="description">Domingo 11:30 am a 6:00 pm</div>
-                </div>
+          <div className="content experiencia">
+            <div className="content">{this.renderAmbiente()}</div>
+          </div>
+        </div>
+
+        <div className="cardExperiencia fluid card">
+          <div className="content cardHeaderExperiencia">
+            <div className="header">Rango de precios</div>
+          </div>
+          <div className="content experiencia">
+            <div className="description">
+              <div className="ui list listaExperiencia">
+                <div className="content">{this.renderPrecios()}</div>
               </div>
             </div>
           </div>
         </div>
+      </div>
+    );
+  }
 
-        <div class="cardExperiencia fluid card">
-          <div class="content cardHeaderExperiencia">
-            <div class="header">Ambiente</div>
-          </div>
-          <div class="content experiencia">
-            <div class="description">
-              <div class="ui list listaExperiencia">
-                <div class="item">
-                  <i class="map marker icon"></i>
-                  <div class="content">
-                    <div class="description">
-                      Familiar Apto para niños, adultos mayores, grupos de
-                      amigos…
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+  mostrarCalificacion(props) {
+    var puntos = [];
+    console.log(Math.floor(props))
+    var calificacion = Math.floor(props);
+    for (var i = 0; i < calificacion; i++) {
+      puntos.push(<img key={i} className="rosa x2" src={RosaActiva} />);
+    }
+    if (props % 1 != 0){
+      for (var i = calificacion; i < 4; i++) {
+        puntos.push(<img key={i} className="rosa x2" src={RosaInactiva} />);
+      }
+      puntos.push(<img key={i} className="rosa x2" src={RosaMitad} />);
+    }else{
+      for (var i = calificacion; i < 5; i++) {
+        puntos.push(<img key={i} className="rosa x2" src={RosaInactiva} />);
+      }
+    }
+    return puntos;
+  }
+
+  renderCalificacionUbicacion() {
+    const elemento = this.props.review.CalificacionUbicacion;
+    
+    return (
+      <div>
+        <div className="ui secondary left aligned segment">
+          <h4 className="ui header">Ubicación</h4>
         </div>
 
-        <div class="cardExperiencia fluid card">
-          <div class="content cardHeaderExperiencia">
-            <div class="header">Rango de precios</div>
-          </div>
-          <div class="content experiencia">
-            <div class="description">
-              <div class="ui list listaExperiencia">
-                <div class="item">
-                  <i class="map marker icon"></i>
-                  <div class="content">
-                    <div class="description">
-                      Adultos Desde los 4700 colones (ceviche de corvina) – 15
-                      000 colones (cortes de carne como rib eye)
-                    </div>
-                  </div>
-                </div>
-                <div class="item">
-                  <i class="map marker icon"></i>
-                  <div class="content">
-                    <div class="description">
-                      Niños 2500 (orden de papas) – 3900 (dedidos de pollo,
-                      pescado)
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div className="ui basic left aligned segment">
+          {elemento.Detalle.map((item, index) => {
+            
+            return <p key={index}>{item}</p>;
+          })}
+        </div>
+
+        <div className="ui basic right aligned segment">
+          <a className="item">
+            <div className="ui basic label textoCalificacion">Calificación:</div>
+            {this.mostrarCalificacion(elemento.Puntaje)}
+          </a>
+        </div>
+      </div>
+    );
+  }
+
+  renderCalificacionServicioCliente() {
+    const elemento = this.props.review.CalificacionServicioCliente;
+    
+    return (
+      <div>
+        <div className="ui secondary left aligned segment">
+          <h4 className="ui header">Servicio al cliente</h4>
+        </div>
+
+        <div className="ui basic left aligned segment">
+          {elemento.Detalle.map((item, index) => {
+            
+            return <p key={index}>{item}</p>;
+          })}
+        </div>
+
+        <div className="ui basic right aligned segment">
+          <a className="item">
+            <div className="ui basic label textoCalificacion">Calificación:</div>
+            {this.mostrarCalificacion(elemento.Puntaje)}
+          </a>
+        </div>
+      </div>
+    );
+  }
+
+  renderCalificacionLimpieza() {
+    const elemento = this.props.review.CalificacionLimpieza;
+    
+    return (
+      <div>
+        <div className="ui secondary left aligned segment">
+          <h4 className="ui header">Limpieza</h4>
+        </div>
+
+        <div className="ui basic left aligned segment">
+          {elemento.Detalle.map((item, index) => {
+            
+            return <p key={index}>{item}</p>;
+          })}
+        </div>
+
+        <div className="ui basic right aligned segment">
+          <a className="item">
+            <div className="ui basic label textoCalificacion">Calificación:</div>
+            {this.mostrarCalificacion(elemento.Puntaje)}
+          </a>
+        </div>
+      </div>
+    );
+  }
+
+  renderCalificacionCalidadPrecio() {
+    const elemento = this.props.review.CalificacionCalidadPrecio;
+    
+    return (
+      <div>
+        <div className="ui secondary left aligned segment">
+          <h4 className="ui header">Relación calidad-precio</h4>
+        </div>
+
+        <div className="ui basic left aligned segment">
+          {elemento.Detalle.map((item, index) => {
+            
+            return <p key={index}>{item}</p>;
+          })}
+        </div>
+
+        <div className="ui basic right aligned segment">
+          <a className="item">
+            <div className="ui basic label textoCalificacion">Calificación:</div>
+            {this.mostrarCalificacion(elemento.Puntaje)}
+          </a>
+        </div>
+      </div>
+    );
+  }
+
+  renderCalificacionProtocolos() {
+    const elemento = this.props.review.CalificacionProtocolos;
+    
+    return (
+      <div>
+        <div className="ui secondary left aligned segment">
+          <h4 className="ui header">Protocolos COVID</h4>
+        </div>
+
+        <div className="ui basic left aligned segment">
+          {elemento.Detalle.map((item, index) => {
+            
+            return <p key={index}>{item}</p>;
+          })}
+        </div>
+
+        <div className="ui basic right aligned segment">
+          <a className="item">
+            <div className="ui basic label textoCalificacion">Calificación:</div>
+            {this.mostrarCalificacion(elemento.Puntaje)}
+          </a>
+        </div>
+      </div>
+    );
+  }
+
+  renderCalificacionInclusion() {
+    const elemento = this.props.review.CalificacionInclusion;
+    
+    return (
+      <div>
+        <div className="ui secondary left aligned segment">
+          <h4 className="ui header">Inclusión</h4>
+        </div>
+        <div className="ui basic left aligned segment">
+          {elemento.Detalle.map((item, index) => {
+            
+            return <p key={index}>{item}</p>;
+          })}
+        </div>
+        <div className="ui basic right aligned segment">
+          <a className="item">
+            <div className="ui basic label textoCalificacion">Calificación:</div>
+            {this.mostrarCalificacion(elemento.Puntaje)}
+          </a>
         </div>
       </div>
     );
@@ -165,167 +353,21 @@ class Review extends Component {
 
   renderCalificaciones() {
     return (
-      <div class="ui">
-        <div>
-          <div class="ui secondary left aligned segment">
-            <h4 class="ui header">Ubicación</h4>
-          </div>
-          <div class="ui basic left aligned segment">
-            <p>
-              La ubicación es super conveniente cerca de centros comerciales,
-              supermercados, gimnasios y demás, está sobre carretera principal,
-              super fácil el acceso, calle completamente asfaltada, segura, con
-              mucha luz y se encuentra en waze.
-            </p>
-          </div>
+      <div className="ui">
+        {this.renderCalificacionUbicacion()}
 
-          <div class="ui basic right aligned segment">
-            <a class="item">
-              <div class="ui basic label textoCalificacion">Calificación:</div>
-              <img className="rosa x2" src={RosaActiva} />
-              <img className="rosa x2" src={RosaActiva} />
-              <img className="rosa x2" src={RosaActiva} />
-              <img className="rosa x2" src={RosaActiva} />
-              <img className="rosa x2" src={RosaActiva} />
-            </a>
-          </div>
-        </div>
-        <div>
-          <div class="ui secondary left aligned segment">
-            <h4 class="ui header">Servicio al cliente</h4>
-          </div>
-          <div class="ui basic left aligned segment">
-            <p>
-              Considero es uno de los puntos más fuertes del restaurante. Hay
-              una persona que recibe a los clientes, se asegura de buscar un
-              buen espacio para las personas, de que cumplan los protocolos de
-              lavado y desinfección de manos antes de entrar. Dan una muy buena
-              bienvenida, están anuentes a responder preguntas, dar
-              recomendaciones en el menú. Cuando llegan los platillos les
-              interesa por saber que piensa el cliente de la comida y también se
-              les ve interés por saber que están pasando un buen momento. Desde
-              la entrada hasta la despedida fueron impecables.
-            </p>
-          </div>
-
-          <div class="ui basic right aligned segment">
-            <a class="item">
-              <div class="ui basic label textoCalificacion">Calificación:</div>
-              <img className="rosa x2" src={RosaActiva} />
-              <img className="rosa x2" src={RosaActiva} />
-              <img className="rosa x2" src={RosaActiva} />
-              <img className="rosa x2" src={RosaActiva} />
-              <img className="rosa x2" src={RosaActiva} />
-            </a>
-          </div>
-        </div>
-        <div>
-          <div class="ui secondary left aligned segment">
-            <h4 class="ui header">Limpieza </h4>
-          </div>
-          <div class="ui basic left aligned segment">
-            <p>
-              Parqueo, terrazas y baños muy limpio y ordenado, salón principal
-              unos cuantos papeles en el suelo debajo de algunas mesas.
-            </p>
-          </div>
-
-          <div class="ui basic right aligned segment">
-            <a class="item">
-              <div class="ui basic label textoCalificacion">Calificación:</div>
-              <img className="rosa x2" src={RosaActiva} />
-              <img className="rosa x2" src={RosaActiva} />
-              <img className="rosa x2" src={RosaActiva} />
-              <img className="rosa x2" src={RosaActiva} />
-              <img className="rosa x2" src={RosaInactiva} />
-            </a>
-          </div>
-        </div>
-        <div>
-          <div class="ui secondary left aligned segment">
-            <h4 class="ui header">Relación calidad-precio </h4>
-          </div>
-          <div class="ui basic left aligned segment">
-            <p>
-              Realmente hay una muy buena relación ya que los productos se ven y
-              saben frescos, los platos están bien hechos, las porciones y los
-              productos son adecuadas al precio de los platos.
-            </p>
-          </div>
-
-          <div class="ui basic right aligned segment">
-            <a class="item">
-              <div class="ui basic label textoCalificacion">Calificación:</div>
-              <img className="rosa x2" src={RosaActiva} />
-              <img className="rosa x2" src={RosaActiva} />
-              <img className="rosa x2" src={RosaActiva} />
-              <img className="rosa x2" src={RosaActiva} />
-              <img className="rosa x2" src={RosaActiva} />
-            </a>
-          </div>
-        </div>
-        <div>
-          <div class="ui secondary left aligned segment">
-            <h4 class="ui header">Protocolos COVID</h4>
-          </div>
-          <div class="ui basic left aligned segment">
-            <p>
-              Me gusta que para poder sentarse en la mesa hay que ir a lavarse
-              las manos y ponerse alcohol en gel. El personal usa la mascarilla
-              y la usa bien, sin estarse tocando la mascarilla durante la
-              atención o sirviendo platos o demás. Me gustaría ver que
-              desinfecten el espacio antes de sentarse o bien que tenga un
-              rotulo dando a conocer que ya esa mesa fue previamente
-              desinfectada. Lo mismo que con los menús, para dar más seguridad
-              al cliente. Considero que las camareras podrían dejar más espacio
-              entre los clientes y ellas a la hora de ir a tomar la orden.
-            </p>
-          </div>
-
-          <div class="ui basic right aligned segment">
-            <a class="item">
-              <div class="ui basic label textoCalificacion">Calificación:</div>
-              <img className="rosa x2" src={RosaActiva} />
-              <img className="rosa x2" src={RosaActiva} />
-              <img className="rosa x2" src={RosaActiva} />
-              <img className="rosa x2" src={RosaActiva} />
-              <img className="rosa x2" src={RosaInactiva} />
-            </a>
-          </div>
-        </div>
-        <div>
-          <div class="ui secondary left aligned segment">
-            <h4 class="ui header">Inclusión </h4>
-          </div>
-          <div class="ui basic left aligned segment">
-            <p>
-              Las personas en sillas de ruedas o problemas de movilidad pueden
-              accesar fácilmente al restaurante, baños ya que cuentan con
-              accesos planos en todo el lugar. Hay un baño exclusivo para
-              personas con discapacidad. Hay personas que pueden atender en
-              otros idiomas como inglés. Se puede mejorar ofreciendo menús con
-              letras más grandes para personas con discapacidad visual,
-              pictogramas para personas con autismo o braille. Se puede mejorar
-              teniendo alguna persona capacitada en LESCO.
-            </p>
-          </div>
-
-          <div class="ui basic right aligned segment">
-            <a class="item">
-              <div class="ui basic label textoCalificacion">Calificación:</div>
-              <img className="rosa x2" src={RosaActiva} />
-              <img className="rosa x2" src={RosaActiva} />
-              <img className="rosa x2" src={RosaInactiva} />
-              <img className="rosa x2" src={RosaInactiva} />
-              <img className="rosa x2" src={RosaInactiva} />
-            </a>
-          </div>
-        </div>
+        {this.renderCalificacionServicioCliente()}
+        {this.renderCalificacionLimpieza()}
+        {this.renderCalificacionCalidadPrecio()}
+        {this.renderCalificacionProtocolos()}
+        {this.renderCalificacionInclusion()}
       </div>
     );
   }
 
-  renderReview() {    
+
+
+  renderReview() {
     if (!this.props.review) {
       return (
         <section className="page-section bg-light" id="portfolio">
@@ -337,7 +379,10 @@ class Review extends Component {
     } else {
       const review = this.props.review;
       const maxDate = Moment([review.date_publish], "DD-MM-YYYY").format("LL");
-      document.documentElement.style.setProperty('--imageBackground',`url(${review.image})`);
+      document.documentElement.style.setProperty(
+        "--imageBackground",
+        `url(${review.image})`
+      );
 
       return (
         <section className="page-section" id="portfolio">
@@ -353,7 +398,7 @@ class Review extends Component {
             <div className="ui fluid image imagenBanner responsive">
               <div className="ui red ribbon label">
                 <i className={review.icon}></i> {review.TipoNegocio}
-              </div>              
+              </div>
             </div>
             <hr />
             {/* Post Content */}
@@ -378,24 +423,16 @@ class Review extends Component {
             Recomendación
           </h4>
 
-         
-            
-          <div class="ui icon green message">
-          <img className="rosa x3" src={CalificacionFinalImagen} />
-            <div class="content">
-              <div class="header recomendacion">¿Recomiendo el lugar para que vayan?</div>
-              <p className="recomendacion">
-                Completamente, tienen buena comida, menú variado, buen servicio
-                al cliente, buena ubicación, buen parqueo. Les aseguro que les
-                va a gustar vayan solos, con amigos, con familia o en pareja, si
-                van me cuentan. Gracias por leerme
-              </p>
+          <div className="ui icon green message">
+            <img className="rosa x3" src={`${review.path}\Calificacion.svg`} />
+            <div className="content">
+              <div className="header recomendacion">
+                ¿Recomiendo el lugar para que vayan?
+              </div>
+              <p className="recomendacion">{review.Comentario}</p>
               <img className="firma text-center" alt="Sofi" src={Nombre} />
             </div>
           </div>
-              
-
-
         </section>
       );
     }

@@ -80,9 +80,9 @@ class Nav extends Component {
               <HashLink className="nav-link js-scroll-trigger" smooth to="/#contactame">Contactame</HashLink>                                                  
               </li>              
             </ul>            
-          </div>
-        </div>
-      </nav>
+          </div>          
+        </div>        
+      </nav>      
     );
   }
 }
