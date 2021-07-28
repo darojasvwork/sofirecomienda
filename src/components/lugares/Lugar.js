@@ -8,6 +8,7 @@ import { NavHashLink as NavLink } from 'react-router-hash-link';
 
 import RosaActiva from "../assets/img/Iconos/RosaActiva.svg";
 import RosaInactiva from "../assets/img/Iconos/RosaInactiva.svg";
+import RosaMitad from "../assets/img/Iconos/RosaMitad.svg";
 
 import "../assets/styles.css";
 
@@ -69,12 +70,20 @@ class Lugar extends Component {
 
   mostrarCalificacion(props) {
     var puntos = [];
-    var calificacion = Math.round(props);
+    console.log(Math.floor(props))
+    var calificacion = Math.floor(props);
     for (var i = 0; i < calificacion; i++) {
-      puntos.push(<img key={i} className="rosa x1" src={RosaActiva} />);
+      puntos.push(<img key={i} className="rosa x2" src={RosaActiva} />);
     }
-    for (var i = calificacion; i < 5; i++) {
-      puntos.push(<img key={i} className="rosa x1" src={RosaInactiva} />);
+    if (props % 1 != 0){
+      for (var i = calificacion; i < 4; i++) {
+        puntos.push(<img key={i} className="rosa x2" src={RosaInactiva} />);
+      }
+      puntos.push(<img key={i} className="rosa x2" src={RosaMitad} />);
+    }else{
+      for (var i = calificacion; i < 5; i++) {
+        puntos.push(<img key={i} className="rosa x2" src={RosaInactiva} />);
+      }
     }
     return puntos;
   }
