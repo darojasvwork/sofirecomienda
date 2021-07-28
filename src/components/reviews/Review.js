@@ -29,7 +29,7 @@ class Review extends Component {
         {reviewsDetalle.Ubicacion.map((item, index) => {
           return (
             <div key={index} className="item">
-              <i className="map marker icon"></i>
+              <i className="caret right icon"></i>
               <div className="content">
                 <div className="description">{item}</div>
               </div>
@@ -48,7 +48,7 @@ class Review extends Component {
         {reviewsDetalle.Tipo.map((item, index) => {
           return (
             <div key={index} className="item">
-              <i className="map marker icon"></i>
+              <i className="caret right icon"></i>
               <div className="content">
                 <div className="description">{item}</div>
               </div>
@@ -67,7 +67,7 @@ class Review extends Component {
         {reviewsDetalle.Horario.map((item, index) => {
           return (
             <div key={index} className="item">
-              <i className="map marker icon"></i>
+              <i className="caret right icon"></i>
               <div className="content">
                 <div className="description">{item}</div>
               </div>
@@ -86,7 +86,7 @@ class Review extends Component {
         {reviewsDetalle.Ambiente.map((item, index) => {
           return (
             <div key={index} className="item">
-              <i className="map marker icon"></i>
+              <i className="caret right icon"></i>
               <div className="content">
                 <div className="description">{item}</div>
               </div>
@@ -105,7 +105,7 @@ class Review extends Component {
         {reviewsDetalle.Precios.map((item, index) => {
           return (
             <div key={index} className="item">
-              <i className="map marker icon"></i>
+              <i className="caret right icon"></i>
               <div className="content">
                 <div className="description">{item}</div>
               </div>
@@ -178,8 +178,7 @@ class Review extends Component {
   }
 
   mostrarCalificacion(props) {
-    var puntos = [];
-    console.log(Math.floor(props))
+    var puntos = [];    
     var calificacion = Math.floor(props);
     for (var i = 0; i < calificacion; i++) {
       puntos.push(<img key={i} className="rosa x2" src={RosaActiva} />);
