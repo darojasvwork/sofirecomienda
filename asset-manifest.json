@@ -1,29 +1,31 @@
 {
   "files": {
-    "main.css": "/static/css/main.dff76072.chunk.css",
-    "main.js": "/static/js/main.4a446c6d.chunk.js",
-    "main.js.map": "/static/js/main.4a446c6d.chunk.js.map",
+    "main.css": "/static/css/main.d3fe5777.chunk.css",
+    "main.js": "/static/js/main.1aba7534.chunk.js",
+    "main.js.map": "/static/js/main.1aba7534.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d4fdf6b6.js",
     "runtime-main.js.map": "/static/js/runtime-main.d4fdf6b6.js.map",
-    "static/js/2.4d992b4c.chunk.js": "/static/js/2.4d992b4c.chunk.js",
-    "static/js/2.4d992b4c.chunk.js.map": "/static/js/2.4d992b4c.chunk.js.map",
+    "static/js/2.5c28cbdf.chunk.js": "/static/js/2.5c28cbdf.chunk.js",
+    "static/js/2.5c28cbdf.chunk.js.map": "/static/js/2.5c28cbdf.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.634fad27f66f7e81e1ce2668b856a31d.js": "/precache-manifest.634fad27f66f7e81e1ce2668b856a31d.js",
+    "precache-manifest.60846a57cc62376bd33538b65275d7d7.js": "/precache-manifest.60846a57cc62376bd33538b65275d7d7.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.dff76072.chunk.css.map": "/static/css/main.dff76072.chunk.css.map",
-    "static/js/2.4d992b4c.chunk.js.LICENSE.txt": "/static/js/2.4d992b4c.chunk.js.LICENSE.txt",
+    "static/css/main.d3fe5777.chunk.css.map": "/static/css/main.d3fe5777.chunk.css.map",
+    "static/js/2.5c28cbdf.chunk.js.LICENSE.txt": "/static/js/2.5c28cbdf.chunk.js.LICENSE.txt",
     "static/media/Nombre.svg": "/static/media/Nombre.0a135ce0.svg",
     "static/media/RosaActiva.svg": "/static/media/RosaActiva.d79db177.svg",
     "static/media/RosaInactiva.svg": "/static/media/RosaInactiva.c11aa268.svg",
     "static/media/RosaMitad.svg": "/static/media/RosaMitad.f0614e96.svg",
     "static/media/Sofi.webp": "/static/media/Sofi.25761a16.webp",
+    "static/media/full.webp": "/static/media/full.39618588.webp",
     "static/media/styles.css": "/static/media/header-bg.c8b35771.webp",
-    "static/media/navbar-logo.svg": "/static/media/navbar-logo.8e6899d4.svg"
+    "static/media/navbar-logo.svg": "/static/media/navbar-logo.8e6899d4.svg",
+    "static/media/thumbnail.webp": "/static/media/thumbnail.717bb3c7.webp"
   },
   "entrypoints": [
     "static/js/runtime-main.d4fdf6b6.js",
-    "static/js/2.4d992b4c.chunk.js",
-    "static/css/main.dff76072.chunk.css",
-    "static/js/main.4a446c6d.chunk.js"
+    "static/js/2.5c28cbdf.chunk.js",
+    "static/css/main.d3fe5777.chunk.css",
+    "static/js/main.1aba7534.chunk.js"
   ]
 }
