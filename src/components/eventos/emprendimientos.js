@@ -166,7 +166,7 @@ const panes = [
                 10% descuento en todas tus compras
               </div>
               <p>
-                i. Te recomiendo comprar estas blusas de algodón que son hechas
+                Te recomiendo comprar estas blusas de algodón que son hechas
                 especialmente para cada persona, la etiqueta dirá hecha para: y
                 le pondrán el nombre de la persona que se lo vas a regalar, ¡Que
                 único!, Hay variedad de colores y diseños.

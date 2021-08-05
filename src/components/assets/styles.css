@@ -11106,6 +11106,9 @@ section#contact form#contactForm :-ms-input-placeholder {
   .cardGuia {
     width: 100% !important;
   }
+  .cardGuia3 {
+    width: 100% !important;    
+  }
 }
 .ui.card > .content > .header:not(.ui),
 .ui.cards > .card > .content > .header:not(.ui) {
