@@ -67,16 +67,16 @@ class Nav extends Component {
           </button>
           <div className="collapse navbar-collapse" id="navbarResponsive">
             <ul className="navbar-nav text-uppercase ml-auto">
-              <li className="nav-item">
-                <HashLink className="nav-link js-scroll-trigger" smooth to="/#about">¿Quién soy?</HashLink>       
+              <li className="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
+                <HashLink className="nav-link js-scroll-trigger" smooth to="/#about" >¿Quién soy?</HashLink>       
               </li>
-              <li className="nav-item">
+              <li className="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
                 <HashLink className="nav-link js-scroll-trigger" smooth to="/#services">Servicios</HashLink>       
               </li>
-              <li className="nav-item">
+              <li className="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
                 <HashLink className="nav-link js-scroll-trigger" smooth to="/#portfolio">Recomendaciones</HashLink>       
               </li>
-              <li className="nav-item">
+              <li className="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
               <HashLink className="nav-link js-scroll-trigger" smooth to="/#contactame">Contactame</HashLink>                                                  
               </li>              
             </ul>            
