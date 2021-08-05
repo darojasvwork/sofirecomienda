@@ -207,7 +207,7 @@ const panes = [
                 10% descuento en todas tus compras
               </div>
               <p>
-                Te recomiendo la hermosa joyería realizada por Laura, tiene detalles únicos que realzaran la belleza de mamá.
+                Te recomiendo la hermosa joyería realizada por Laura, tiene detalles únicos que realzarán la belleza de mamá.
               </p>
               <div class="meta">
                 <a class="group">
@@ -329,7 +329,7 @@ const panes = [
     render: () => (
       <Tab.Pane attached={false}>
         <div class="ui centered grid link cards">
-          <div class="ui cardGuia card ">
+          <div class="ui cardGuia3 card ">
             <div class="content">
               <div class="header negra">Chupaletas</div>
             </div>
@@ -343,7 +343,7 @@ const panes = [
               </div>
               <img src="./assets/img/eventos/01/emprendimientos/07.webp" />
             </div>
-            <div class="content contentGuia">
+            <div class="content contentGuia3">
               <div class="ui orange header">
                 Una paleta gratis por la compra del paquete de 5 paletas
               </div>
@@ -369,7 +369,7 @@ const panes = [
             </a>
           </div>
 
-          <div class="ui cardGuia card">
+          <div class="ui cardGuia3 card">
             <div class="content">
               <div class="header">DulceArte Cakes Boutique</div>
             </div>
@@ -383,7 +383,7 @@ const panes = [
               </div>
               <img src="./assets/img/eventos/01/emprendimientos/08.webp" />
             </div>
-            <div class="content contentGuia">
+            <div class="content contentGuia3">
               <div class="ui orange header">
                 10% descuento en todas tus compras
               </div>
@@ -398,6 +398,45 @@ const panes = [
                     Oreamuno, Cartago), entregas con costo adicional en todo
                     Cartago y alrededores, excepto Turrialba.</p><p>Teléfono:
                     6269-2668
+                  </p>
+                </a>
+              </div>
+            </div>
+            <a
+              class="ui bottom primary button"
+              href="https://www.facebook.com/Dulceartecakesboutique"
+              target="_blank"
+            >
+              <i class="add icon"></i>
+              Visitar
+            </a>
+          </div>
+          <div class="ui cardGuia3 card">
+            <div class="content">
+              <div class="header">Homemade by Lu</div>
+            </div>
+            <div class="image dimmable">
+              <div class="ui blurring inverted dimmer transition hidden">
+                <div class="content">
+                  <div class="center">
+                    <div class="ui teal button">Add Friend</div>
+                  </div>
+                </div>
+              </div>
+              <img src="./assets/img/eventos/01/emprendimientos/85.webp" />
+            </div>
+            <div class="content contentGuia3">
+              <div class="ui orange header">
+                5% descuento en todas tus compras
+              </div>
+              <p>
+                Te recomiendo la torta de brownie, dulce de leche y frutos rojos, torta chilena, macarons y todos los dulces que Luana hace con mucho amor.
+              </p>
+              <div class="meta">
+                <a class="group">
+                  <p>
+                    Entregas gratuitas en cartago centro y a 5 Km a la redonda, posterior a 5 Km tiene un costo adicional </p><p>Teléfono:
+                    8576-0023
                   </p>
                 </a>
               </div>
