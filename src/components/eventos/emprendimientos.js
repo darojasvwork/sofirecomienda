@@ -207,7 +207,7 @@ const panes = [
                 10% descuento en todas tus compras
               </div>
               <p>
-                Te recomiendo la hermosa joyeria realizada por Laura, tiene detalles únicos que realzaran la belleza de mamá.
+                Te recomiendo la hermosa joyería realizada por Laura, tiene detalles únicos que realzaran la belleza de mamá.
               </p>
               <div class="meta">
                 <a class="group">
