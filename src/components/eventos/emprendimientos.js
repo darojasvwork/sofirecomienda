@@ -104,7 +104,7 @@ const panes = [
     render: () => (
       <Tab.Pane attached={false}>
         <div class="ui centered grid link cards">
-          <div class="ui cardGuia card ">
+          <div class="ui cardGuia4 card ">
             <div class="content">
               <div class="header negra">Ticocos</div>
             </div>
@@ -118,7 +118,7 @@ const panes = [
               </div>
               <img src="./assets/img/eventos/01/emprendimientos/03.webp" />
             </div>
-            <div class="content contentGuia">
+            <div class="content contentGuia4">
               <div class="ui orange header">
                 5% descuento en todas tus compras
               </div>
@@ -147,7 +147,7 @@ const panes = [
               Visitar
             </a>
           </div>
-          <div class="ui cardGuia card ">
+          <div class="ui cardGuia4 card ">
             <div class="content">
               <div class="header negra">Datsi – Blusas</div>
             </div>
@@ -161,7 +161,7 @@ const panes = [
               </div>
               <img src="./assets/img/eventos/01/emprendimientos/04.webp" />
             </div>
-            <div class="content contentGuia">
+            <div class="content contentGuia4">
               <div class="ui orange header">
                 10% descuento en todas tus compras
               </div>
@@ -182,6 +182,44 @@ const panes = [
             <a
               class="ui bottom primary button"
               href="https://www.facebook.com/datsi.costarica"
+              target="_blank"
+            >
+              <i class="add icon"></i>
+              <a>Visitar</a>
+            </a>
+          </div>
+          <div class="ui cardGuia4 card ">
+            <div class="content">
+              <div class="header negra">Laura Pérez Designs</div>
+            </div>
+            <div class="image dimmable">
+              <div class="ui blurring inverted dimmer transition hidden">
+                <div class="content">
+                  <div class="center">
+                    <div class="ui teal button">Add Friend</div>
+                  </div>
+                </div>
+              </div>
+              <img src="./assets/img/eventos/01/emprendimientos/45.webp" />
+            </div>
+            <div class="content contentGuia4">
+              <div class="ui orange header">
+                10% descuento en todas tus compras
+              </div>
+              <p>
+                Te recomiendo la hermosa joyeria realizada por Laura, tiene detalles únicos que realzaran la belleza de mamá.
+              </p>
+              <div class="meta">
+                <a class="group">
+                  <p>
+                    Entregas a toda la GAM.</p><p>Teléfono: 6305-2927
+                  </p>
+                </a>
+              </div>
+            </div>
+            <a
+              class="ui bottom primary button"
+              href="https://www.facebook.com/Lauraperezdesigns"
               target="_blank"
             >
               <i class="add icon"></i>

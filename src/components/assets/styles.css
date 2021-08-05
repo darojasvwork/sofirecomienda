@@ -11077,6 +11077,11 @@ section#contact form#contactForm :-ms-input-placeholder {
   display: 0	 !important;
 }
 
+.contentGuia4 {
+  min-height: 300px;
+  display: 0	 !important;
+}
+
 .ui.card.cardGuia>.content, .ui.cards>.card>.content{
   flex-grow: 0 !important;
     
@@ -11107,6 +11112,9 @@ section#contact form#contactForm :-ms-input-placeholder {
     width: 100% !important;
   }
   .cardGuia3 {
+    width: 100% !important;    
+  }
+  .cardGuia4 {
     width: 100% !important;    
   }
 }
