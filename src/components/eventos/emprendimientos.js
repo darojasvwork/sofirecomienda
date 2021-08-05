@@ -443,7 +443,7 @@ const panes = [
             </div>
             <a
               class="ui bottom primary button"
-              href="https://www.facebook.com/Dulceartecakesboutique"
+              href="https://www.instagram.com/homemade_by_lu_cr/"
               target="_blank"
             >
               <i class="add icon"></i>
