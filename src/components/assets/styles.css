@@ -4683,6 +4683,24 @@ input[type="button"].btn-block {
   border: 1px solid rgba(0, 0, 0, 0.125);
   border-radius: 0.25rem;
 }
+
+.header .negra{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+  color: #000 !important;
+  word-wrap: break-word;
+  background-clip: border-box;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+} 
+
+.ui.card > .content > .header:not(.ui),
+.ui.cards > .card.negra > .content > .header:not(.ui) {
+  color: #000 !important;
+}
+
 .card > hr {
   margin-right: 0;
   margin-left: 0;
@@ -11040,6 +11058,37 @@ section#contact form#contactForm :-ms-input-placeholder {
   -webkit-box-shadow: none;
   box-shadow: none;
 }
+.cardGuia {
+  width: 48% !important;
+  display: 0	 !important;
+}
+.cardGuia3 {
+  width: 30% !important;
+  display: 0	 !important;
+}
+
+.contentGuia {
+  min-height: 220px;
+  display: 0	 !important;
+}
+
+.contentGuia3 {
+  min-height: 230px;
+  display: 0	 !important;
+}
+
+.ui.card.cardGuia>.content, .ui.cards>.card>.content{
+  flex-grow: 0 !important;
+    
+}
+
+
+
+
+.ui.cardGuia .meta>a:not(.ui), .ui.cards>.card .meta>a:not(.ui) {
+  color:rgb(0, 0, 0) !important;
+  
+}
 
 @media only screen and (max-width: 1000px) {
   .cardExperiencia {
@@ -11052,6 +11101,9 @@ section#contact form#contactForm :-ms-input-placeholder {
     min-height: 0em;
   }
   .cardLugar {
+    width: 100% !important;
+  }
+  .cardGuia {
     width: 100% !important;
   }
 }
@@ -11088,4 +11140,9 @@ section#contact form#contactForm :-ms-input-placeholder {
   background-attachment: scroll;
   background-position: center top;
   background-size: cover;
+}
+.wrapped{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
 }

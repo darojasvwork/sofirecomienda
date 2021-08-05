@@ -9,6 +9,7 @@ import Footer from "./general/Footer";
 import Main from "./main/Main";
 import Review from "./reviews/Review";
 import Lugar from "./lugares/Lugar";
+import Evento from "./eventos/diamadre";
 import history from "./history";
 
 const App = () => {
@@ -21,6 +22,7 @@ const App = () => {
             <Route path="/" exact component={Main} />
             <Route path="/ReviewsDetalle/:id" exact component={Review} />
             <Route path="/lugares/lugar/:id" exact component={Lugar} />
+            <Route path="/mama" exact component={Evento} />
           </Switch>
           <Footer />
         </div>

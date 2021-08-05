@@ -74,7 +74,7 @@ class Nav extends Component {
                 <HashLink className="nav-link js-scroll-trigger" smooth to="/#services">Servicios</HashLink>       
               </li>
               <li className="nav-item">
-                <HashLink className="nav-link js-scroll-trigger" smooth to="/#portfolio">Lugares visitados</HashLink>       
+                <HashLink className="nav-link js-scroll-trigger" smooth to="/#portfolio">Recomendaciones</HashLink>       
               </li>
               <li className="nav-item">
               <HashLink className="nav-link js-scroll-trigger" smooth to="/#contactame">Contactame</HashLink>                                                  
