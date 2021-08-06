@@ -173,9 +173,8 @@ const panes = [
               </p>
               <div class="meta">
                 <a class="group">
-                  <p>
-                    Entregas a toda la GAM.</p><p>Teléfono: 8439-9627
-                  </p>
+                  <p>Entregas a toda la GAM.</p>
+                  <p>Teléfono: 8439-9627</p>
                 </a>
               </div>
             </div>
@@ -207,13 +206,13 @@ const panes = [
                 10% descuento en todas tus compras
               </div>
               <p>
-                Te recomiendo la hermosa joyería realizada por Laura, tiene detalles únicos que realzarán la belleza de mamá.
+                Te recomiendo la hermosa joyería realizada por Laura, tiene
+                detalles únicos que realzarán la belleza de mamá.
               </p>
               <div class="meta">
                 <a class="group">
-                  <p>
-                    Entregas a toda la GAM.</p><p>Teléfono: 6305-2927
-                  </p>
+                  <p>Entregas en todo el territorio nacional.</p>
+                  <p>Teléfono: 6305-2927</p>
                 </a>
               </div>
             </div>
@@ -263,8 +262,9 @@ const panes = [
                 <a class="group">
                   <p>
                     Entregas gratuitas en Paraíso y entregas con costo adicional
-                    en todo Cartago.</p><p>Teléfono: 8965-6650
+                    en todo Cartago.
                   </p>
+                  <p>Teléfono: 8965-6650</p>
                 </a>
               </div>
             </div>
@@ -305,9 +305,9 @@ const panes = [
                 <a class="group">
                   <p>
                     Entregas gratuitas en Paraíso y entregas con costo adicional
-                    en todo Cartago y demás parte de la GAM.</p><p>Teléfono:
-                    7186-8246
+                    en todo Cartago y demás parte de la GAM.
                   </p>
+                  <p>Teléfono: 7186-8246</p>
                 </a>
               </div>
             </div>
@@ -396,9 +396,9 @@ const panes = [
                   <p>
                     Entregas gratuitas en la casa de Fanny (San Rafael,
                     Oreamuno, Cartago), entregas con costo adicional en todo
-                    Cartago y alrededores, excepto Turrialba.</p><p>Teléfono:
-                    6269-2668
+                    Cartago y alrededores, excepto Turrialba.
                   </p>
+                  <p>Teléfono: 6269-2668</p>
                 </a>
               </div>
             </div>
@@ -430,14 +430,17 @@ const panes = [
                 5% descuento en todas tus compras
               </div>
               <p>
-                Te recomiendo la torta de brownie, dulce de leche y frutos rojos, torta chilena, macarons y todos los dulces que Luana hace con mucho amor.
+                Te recomiendo la torta de brownie, dulce de leche y frutos
+                rojos, torta chilena, macarons y todos los dulces que Luana hace
+                con mucho amor.
               </p>
               <div class="meta">
                 <a class="group">
                   <p>
-                    Entregas gratuitas en cartago centro y a 5 Km a la redonda, posterior a 5 Km tiene un costo adicional </p><p>Teléfono:
-                    8576-0023
+                    Entregas gratuitas en cartago centro y a 5 Km a la redonda,
+                    posterior a 5 Km tiene un costo adicional{" "}
                   </p>
+                  <p>Teléfono: 8576-0023</p>
                 </a>
               </div>
             </div>
@@ -483,7 +486,13 @@ const panes = [
                 esta es la opción ideal.
               </p>
               <div class="meta">
-                <a class="group"><p>Entregas sin costo adicional en Cartago, Ujarrás, Paraíso, Orosi y Cachí.</p><p>Teléfono: 8884-5963</p></a>
+                <a class="group">
+                  <p>
+                    Entregas sin costo adicional en Cartago, Ujarrás, Paraíso,
+                    Orosi y Cachí.
+                  </p>
+                  <p>Teléfono: 8884-5963</p>
+                </a>
               </div>
             </div>
             <a
@@ -519,7 +528,14 @@ const panes = [
                 pechugas de pollo rellenas, la lasaña o pastel de pollo.
               </p>
               <div class="meta">
-                <a class="group"><p>Entregas gratuitas en la casa de Fanny (San Rafael, Oreamuno, Cartago), entregas con costo adicional en todo Cartago y alrededores, excepto Turrialba.</p><p>Teléfono: 6269-2668</p></a>
+                <a class="group">
+                  <p>
+                    Entregas gratuitas en la casa de Fanny (San Rafael,
+                    Oreamuno, Cartago), entregas con costo adicional en todo
+                    Cartago y alrededores, excepto Turrialba.
+                  </p>
+                  <p>Teléfono: 6269-2668</p>
+                </a>
               </div>
             </div>
             <a
@@ -550,12 +566,17 @@ const panes = [
                 10% descuento en todas tus compras
               </div>
               <p>
-              Te recomiendo las deliciosas comidas tradicionales costarricenses en un ambiente familiar, pet friendly, espacioso y con una vista muy hermosa de Cartago. Habrá conciertos gratuitos el 14 de agosto 6pm y 15 agosto 1:30pm.
-Ileana y José esperan para atenderte.
-
+                Te recomiendo las deliciosas comidas tradicionales
+                costarricenses en un ambiente familiar, pet friendly, espacioso
+                y con una vista muy hermosa de Cartago. Habrá conciertos
+                gratuitos el 14 de agosto 6pm y 15 agosto 1:30pm. Ileana y José
+                esperan para atenderte.
               </p>
               <div class="meta">
-                <a class="group"><p>Contenedores Gastro Park, Cartago.</p><p>Horario: 12md -9pm </p></a>
+                <a class="group">
+                  <p>Contenedores Gastro Park, Cartago.</p>
+                  <p>Horario: 12md -9pm </p>
+                </a>
               </div>
             </div>
             <a
@@ -599,6 +620,11 @@ Ileana y José esperan para atenderte.
                 Segundo esmaltado a mitad de precio
               </div>
               <p>
+                Te recomiendo agendar esta experiencia de tener un esmaltado
+                semipermanente 15 días con las uñas perfectas, para mi es
+                terapéutico. Sirleny está esperando para chinear a tu mamá.
+              </p>
+              <p>
                 Compra 1 esmaltado semipermanente y el segundo te queda a mitad
                 de precio. Puedes utilizarlo para vos en otra cita o para 2
                 personas.Cada esmaltado cuesta 10 mil colones, si compras este
@@ -606,7 +632,10 @@ Ileana y José esperan para atenderte.
                 semipermanentes.
               </p>
               <div class="meta">
-                <a class="group"><p>A domicilio en Cartago y alrededores.</p><p>Teléfono: 6075-9734</p></a>
+                <a class="group">
+                  <p>A domicilio en Cartago y alrededores.</p>
+                  <p>Teléfono: 6075-9734</p>
+                </a>
               </div>
             </div>
             <a
