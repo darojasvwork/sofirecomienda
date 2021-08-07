@@ -280,7 +280,7 @@ const panes = [
 
           <div class="ui cardGuia card">
             <div class="content">
-              <div class="header">Mio flore</div>
+              <div class="header">Mio flore - Santa Sangría</div>
             </div>
             <div class="image dimmable">
               <div class="ui blurring inverted dimmer transition hidden">

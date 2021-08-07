@@ -8,12 +8,12 @@ class Header extends Component {
       <header className="masthead transbox">
         <div className="container">
           <div className="masthead-heading">
-            ¡Bienvenido a Sofi Recomienda!
+            ¡Día de la madre en Sofi Recomienda!
           </div>
-          <div className="masthead-subheading">
-            Descubramos juntos ¿Qué comer? ¿Dondé ir? y ¿Qué nuevo experimentar?
+          <div className="masthead-subheading">            
+            En este mes de agosto preparamos una guía de recomendaciones para el día de la madre
           </div>
-          <HashLink className="btn btn-primary btn-xl text-uppercase js-scroll-trigger" smooth to="/#portfolio">Conocer más</HashLink>
+          <HashLink className="btn btn-primary btn-xl text-uppercase js-scroll-trigger" smooth to="/mama">Mírala acá</HashLink>
         </div>
       </header>
     );
